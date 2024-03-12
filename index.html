@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/earthfav.png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=League+Spartan:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d6d9dbeb85.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Planets Fact Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <p class="logo">the planets</p>
+        <ul id="nav-menu" class="nav-menu">
+          <li class="row">
+            <span class="mobile-circle mercury-circle"></span
+            ><a class="nav-link" href="#mercury"> mercury</a
+            ><img
+              src="./assets/icon-chevron.svg"
+              class="chevron"
+              alt="chevron icon"
+            />
+          </li>
+          <li class="row">
+            <span class="mobile-circle venus-circle"></span
+            ><a class="nav-link" href="#venus">venus</a
+            ><img
+              src="./assets/icon-chevron.svg"
+              class="chevron"
+              alt="chevron icon"
+            />
+          </li>
+          <li class="row">
+            <span class="mobile-circle earth-circle"></span
+            ><a class="nav-link" href="#earth">earth</a
+            ><img
+              src="./assets/icon-chevron.svg"
+              class="chevron"
+              alt="chevron icon"
+            />
+          </li>
+          <li class="row">
+            <span class="mobile-circle mars-circle"></span
+            ><a class="nav-link" href="#mars">mars</a
+            ><img
+              src="./assets/icon-chevron.svg"
+              class="chevron"
+              alt="chevron icon"
+            />
+          </li>
+          <li class="row">
+            <span class="mobile-circle jupiter-circle"></span
+            ><a class="nav-link" href="#jupiter">jupiter</a
+            ><img
+              src="./assets/icon-chevron.svg"
+              class="chevron"
+              alt="chevron icon"
+            />
+          </li>
+          <li class="row">
+            <span class="mobile-circle saturn-circle"></span
+            ><a class="nav-link" href="#saturn">saturn</a
+            ><img
+              src="./assets/icon-chevron.svg"
+              class="chevron"
+              alt="chevron icon"
+            />
+          </li>
+          <li class="row">
+            <span class="mobile-circle uranus-circle"></span
+            ><a class="nav-link" href="#uranus">uranus</a
+            ><img
+              src="./assets/icon-chevron.svg"
+              class="chevron"
+              alt="chevron icon"
+            />
+          </li>
+          <li class="row">
+            <span class="mobile-circle neptune-circle"></span
+            ><a class="nav-link" href="#neptune">neptune</a
+            ><img
+              src="./assets/icon-chevron.svg"
+              class="chevron"
+              alt="chevron icon"
+            />
+          </li>
+        </ul>
+        <i class="fa-solid fa-bars" id="toggle-btn" role="menu"></i>
+        <i class="fa-solid fa-x close-btn" id="close-btn" role="menu"></i>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="flex-container">
+        <div class="image-container">
+          <img src="" alt="" id="planet-img" />
+          <img src="" alt="" id="img-overlay" />
+        </div>
+        <div class="column-container">
+          <div class="text-container">
+            <h1 id="planet-name"></h1>
+            <p id="planet-info"></p>
+            <p id="source"></p>
+          </div>
+          <div class="btn-container">
+            <button id="overview-btn" class="btn">
+              <span class="btn-number">01</span>
+              <span>overview</span>
+            </button>
+            <button id="structure-btn" class="btn">
+              <span class="btn-number">02</span>
+              <span class="hidden">internal </span>
+              <span>structure</span>
+            </button>
+            <button id="geology-btn" class="btn">
+              <span class="btn-number">03</span>
+              <span>surface </span>
+              <span class="hidden">geology</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="row-container">
+          <div class="column">
+            <h2>rotation time</h2>
+            <p id="rotation-time"></p>
+          </div>
+          <div class="column">
+            <h2>revolution time</h2>
+            <p id="revolution-time"></p>
+          </div>
+          <div class="column">
+            <h2>radius</h2>
+            <p id="radius"></p>
+          </div>
+          <div class="column">
+            <h2>average temp.</h2>
+            <p id="avg-temp"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

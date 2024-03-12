@@ -1,0 +1,540 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #070724;
+    color: #fff;
+    background-image: url('assets/background-stars.svg');
+    background-size: cover; 
+    animation: moveBackground 20s linear infinite;
+    
+}
+@keyframes moveBackground {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+img #overlay, img.overlay {
+    background-color: transparent;
+}
+
+
+.logo {
+    text-transform: uppercase;
+    font-family: "Antonio", sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
+    animation: tracking-in-expand 2s .5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.75;
+    transition: all .35s ease-in;
+    animation: tracking-in-expand 2s 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    opacity: 1;
+    box-shadow: 1px 1px 1px goldenrod;
+}
+
+#planet-name {
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+#planet-info {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.563rem;
+    margin-top: 1.438rem;
+}
+
+#source {
+    font-family: "League Spartan", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.563rem;
+    opacity: 0.5;
+}
+
+#source a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 1em;
+    transition: all .35s ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75;
+    box-shadow: 1px 1px 15px goldenrod;
+    border-radius: 3px;
+}
+
+.btn span {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.563rem;
+    letter-spacing: 2.57px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.column h2 {
+    text-transform: uppercase;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 0.688rem;
+    line-height: 1.563rem;
+    letter-spacing: 1px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.column p {
+    margin-top: 0.25rem;
+    margin-bottom: 1.688rem;
+    text-transform: uppercase;
+    font-family: "Antonio", sans-serif;
+    font-weight: 400;
+    line-height: 3.235rem;
+    font-size: 2.5rem;
+    letter-spacing: -1.5px;
+}
+
+
+
+.mercury {
+    background-color: #419EBB;
+}
+
+.venus {
+    background-color: #EDA249;
+}
+
+.earth {
+    background-color: #6D2ED5;
+}
+
+.mars {
+    background-color: #D14C32;
+}
+
+.jupiter {
+    background-color: #D83A34;
+}
+
+.saturn {
+    background-color: #CD5120;
+}
+
+.uranus {
+    background-color: #1EC1A2;
+}
+
+.neptune {
+    background-color: #2D68F0;
+}
+
+
+header {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 2.063rem;
+}
+
+#planet-img {
+    min-width: 300px;
+    max-width: 450px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18.75rem;
+    padding-bottom: 1em;
+}
+
+.column-container {
+    width: 25%;
+}
+
+.row-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+    margin-top: 7rem;
+}
+
+.column {
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+    padding: 1.25rem 6.5rem 0 1.4rem;
+}
+
+.image-container {
+    position: relative;
+}
+
+#img-overlay {
+    position: absolute;
+    bottom: -35%;
+    right: 25%;
+    width: 50%;
+}
+
+main {
+    padding-bottom: 1em;
+}
+
+.fa-solid,
+.mobile,
+.chevron,
+.mobile-circle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo,
+    .navbar a {
+        animation: none;
+    }
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        margin-top: 146px;
+        gap: 130px;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .column-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .text-container {
+        max-width: 60%;
+    }
+
+    .btn-container {
+        max-width: 40%;
+    }
+
+    .row-container {
+        width: 100%;
+        gap: 10px;
+        margin-top: 27px;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    .column {
+        padding: 16px 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #nav-menu {
+        display: none;
+    }
+
+    #toggle-btn {
+        display: inline;
+        cursor: pointer;
+    }
+
+    #toggle-btn.active {
+        display: none;
+    }
+
+    #close-btn.active {
+        display: inline;
+    }
+
+    .mobile,
+    .mobile-circle,
+    .chevron {
+        display: inline;
+    }
+
+    .symbol {
+        opacity: 0.4;
+        color: #fff;
+        mix-blend-mode: normal;
+    }
+
+    .mobile-circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+
+    .navbar {
+        flex-direction: row;
+        border-bottom: 1px solid #fff;
+        position: relative;
+    }
+
+    #nav-menu.active {
+        display: flex;
+        background-color: #070724;
+        position: absolute;
+        top: 100px;
+        left: -35px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        flex-direction: column;
+        padding: 1.5rem;
+        align-self: flex-start;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    .nav-link {
+        margin-right: auto;
+        margin-left: 25px;
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: "League Spartan", sans-serif;
+        line-height: 25px;
+        letter-spacing: 1.36px;
+    }
+
+    .navbar li {
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+        padding-bottom: 1em;
+    }
+
+    .column-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-container {
+        position: absolute;
+        top: 15%;
+        flex-direction: row;
+        display: flex;
+        border: 1px solid yellow;
+        min-width: 330px;
+
+    }
+
+    .btn-container button {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        outline: none;
+        align-self: stretch;
+    }
+
+    .btn-number,
+    .hidden {
+        display: none;
+    }
+
+
+
+    .mercury {
+        background-color: transparent;
+        border-bottom: 4px solid #419EBB;
+    }
+
+    .mercury-circle {
+        background-color: #419EBB;
+    }
+
+    .venus {
+        background-color: transparent;
+        border-bottom: 4px solid #EDA249;
+    }
+
+    .venus-circle {
+        background-color: #EDA249;
+    }
+
+    .earth {
+        background-color: transparent;
+        border-bottom: 4px solid #6D2ED5;
+    }
+
+    .earth-circle {
+        background-color: #6D2ED5;
+    }
+
+    .mars {
+        background-color: transparent;
+        border-bottom: 4px solid #D14C32;
+    }
+
+    .mars-circle {
+        background-color: #D14C32;
+    }
+
+    .jupiter {
+        background-color: transparent;
+        border-bottom: 4px solid #D83A34;
+    }
+
+    .jupiter-circle {
+        background-color: #D83A34;
+    }
+
+    .saturn-circle {
+        background-color: #CD5120;
+    }
+
+    .saturn {
+        background-color: transparent;
+        border-bottom: 4px solid #CD5120;
+    }
+
+    .uranus {
+        background-color: transparent;
+        border-bottom: 4px solid #1EC1A2;
+    }
+
+    .uranus-circle {
+        background-color: #1EC1A2;
+    }
+
+    .neptune {
+        background-color: transparent;
+        border-bottom: 4px solid #2D68F0;
+    }
+
+    .neptune-circle {
+        background-color: #2D68F0;
+    }
+
+    .row-container {
+        flex-direction: column;
+    }
+
+    .column {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .column p {
+        font-size: 20px;
+    }
+
+    .text-container {
+        text-align: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 51.76px;
+    }
+
+    #planet-info {
+        font-size: 11px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    #planet-img {
+        min-width: 200px;
+        max-width: 300px;
+    }
+}
