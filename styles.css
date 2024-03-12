@@ -411,7 +411,6 @@ main {
         top: 15%;
         flex-direction: row;
         display: flex;
-/*         border: 1px solid yellow; */
         min-width: 330px;
 
     }
